@@ -30,7 +30,7 @@
 |---|---|---|
 | **ffmpeg / ffprobe** | 抽音轨、抽帧、拼九宫格 | **LGPL v2.1+**（若用 GPL 构建则为 GPL）。本项目**不打包** ffmpeg，请自行安装：https://ffmpeg.org |
 | **faster-whisper-xxl** | ASR 转写 | **不打包**，请自行安装（本项目只调用其命令行） |
-| **large-v3 模型** | 转写模型 | **不打包**，约 3 GB，需自行下载 |
+| **large-v3 模型** | 转写模型 | **不打包**，约 3 GB。下载：[魔搭](https://www.modelscope.cn/models/Systran/faster-whisper-large-v3) / [HuggingFace](https://huggingface.co/Systran/faster-whisper-large-v3/tree/main)。底层模型 [openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) 为 MIT |
 | **Node.js** | 运行环境 | MIT |
 
 ---

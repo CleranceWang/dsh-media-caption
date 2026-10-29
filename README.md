@@ -42,7 +42,16 @@
 | **Node.js** ≥ 22 | 运行环境 |
 | **ffmpeg / ffprobe** | 加到 PATH 即可 |
 | **faster-whisper-xxl** | 命令行版，见 [发布页](https://github.com/Purfview/whisper-standalone-win) |
-| **large-v3 模型** | 约 3 GB |
+| **large-v3 模型** | 约 3 GB，见下方下载 |
+
+**模型下载**（国内推荐魔搭，免代理）：
+
+- 魔搭：[Systran/faster-whisper-large-v3](https://www.modelscope.cn/models/Systran/faster-whisper-large-v3) ← **3.09 GB，直连**
+- HuggingFace：[Systran/faster-whisper-large-v3](https://huggingface.co/Systran/faster-whisper-large-v3/tree/main)
+
+下下来是一个目录（里面是 `model.bin` / `config.json` / `tokenizer.json` 等），把**这个目录**的路径填到下面的 `modelDir`。不用改名。
+
+> 模型的来源是 [openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)（MIT），由 Systran 转成 CTranslate2 格式给 faster-whisper 用。本项目不打包模型。
 
 ### 2. 配置
 
