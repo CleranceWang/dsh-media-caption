@@ -1,0 +1,36 @@
+# ─── 本机配置（绝不入库）───────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── 运行时数据 ────────────────────────────────
+# 队列数据库：本机生成，不该跟代码走
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# 处理产物（测试时留下的样本目录）
+out-*/
+in/
+in-bare/
+in-std/
+_work/
+last-manifest.json
+
+# ─── 依赖 ──────────────────────────────────────
+node_modules/
+package-lock.json
+
+# ─── 编辑器 / 系统 ─────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ─── 日志与临时文件 ────────────────────────────
+*.log
+tmp/
+.tmp/
+.verify-tmp/

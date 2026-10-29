@@ -1,0 +1,32 @@
+# ============================================================================
+# dsh-media-eye —— DSH bundle patch
+# ============================================================================
+# 挂载声明：DSH 启动时把本插件插进 profile 的配置树。
+#
+# 安装（从 GitHub）：
+#   dshm_install，id 填 <github-owner>/dsh-media-eye
+#
+# 本地开发：把本目录软链/联接到 profile 的 node_modules/ 下即可。
+#   ⚠️ 不要在 profile 里跑 `pnpm install` —— @deepseek-ai/* 由宿主自带，装不上。
+#
+# ⚠️ `name:` 必须与安装后的**包名**完全一致（dsh-media-eye）。
+#
+# 配置：~/.dsh/media-eye.config.json（或环境变量 MEDIA_EYE_*）
+#
+#   最小（只用两个工具，不扫盘）：
+#     { "whisper": "...", "modelDir": "...", "outRoot": "D:/media/out" }
+#
+#   自动处理（丢进输入目录就自己跑）：
+#     {
+#       "inputRoot": "D:/media/in",
+#       "outRoot":   "D:/media/out",
+#       "dbPath":    "D:/media/queue.db",
+#       "sentinel":  true,
+#       "watcher":   true
+#     }
+#   ★ sentinel / watcher 默认都是 false：装上先只有工具，不会自己去扫盘。
+# ============================================================================
+
+- insert:
+    - id: media-eye
+      name: dsh-media-eye

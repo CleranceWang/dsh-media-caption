@@ -1,0 +1,42 @@
+{
+  "name": "dsh-media-eye",
+  "version": "0.1.0",
+  "description": "媒体之眼：给视频/音频生成字幕与关键帧，只出原料（json 字幕 + jpg 帧），不做 AI 总结。告诉 agent「去哪取东西」。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    ".env.example"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "asr",
+    "whisper",
+    "video",
+    "transcript",
+    "frames"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js",
+    "test": "node test/test-direct.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
