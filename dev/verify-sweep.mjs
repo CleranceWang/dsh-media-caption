@@ -65,7 +65,7 @@ for (const b of sw.output.render({ run: true }, runFake)) console.log(b.text)
 const pr = tools.find((t) => t.name === 'media_eye_process')
 const manifestVoice = {
   note_id: '96ff5a3f', duration_ms: 195280, speech: 'present', language: 'zh',
-  segments: [{ text: '第一句。' }, { text: '第二句。' }],
+  segments: [{ start: 0, end: 3200, text: '第一句。' }, { start: 3200, end: 6800, text: '第二句。' }],
   where: {
     subtitle: '\\\\nas\\out\\X\\字幕.json',
     sheets: ['\\\\nas\\out\\X\\previews\\sheet.jpg'],
