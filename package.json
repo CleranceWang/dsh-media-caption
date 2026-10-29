@@ -33,7 +33,7 @@
   },
   "scripts": {
     "check": "node --check lib/index.js",
-    "test": "node test/test-direct.js"
+    "test": "node test/smoke.test.js"
   },
   "engines": {
     "node": ">=22"
