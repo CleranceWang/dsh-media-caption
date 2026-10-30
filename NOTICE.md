@@ -1,6 +1,6 @@
 # NOTICE · 来源与致谢
 
-本项目（`dsh-media-eye`）自身代码以 **MIT** 许可发布（见 `LICENSE`）。
+本项目（`dsh-media-caption`）自身代码以 **MIT** 许可发布（见 `LICENSE`）。
 
 ---
 

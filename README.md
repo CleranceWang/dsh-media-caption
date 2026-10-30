@@ -1,4 +1,4 @@
-# dsh-media-eye · 媒体之眼
+# dsh-media-caption · 媒体之眼
 
 > 给视频/音频生成**字幕 JSON** 和**关键帧 JPG**，只交原料，不做判断。
 
@@ -55,7 +55,7 @@
 
 ### 2. 配置
 
-配置可以来自 `~/.dsh/media-eye.config.json`，也可以用环境变量（环境变量优先）。
+配置可以来自 `~/.dsh/media-caption.config.json`，也可以用环境变量（环境变量优先）。
 
 **最小配置**（只用两个工具，不扫盘）：
 
@@ -90,7 +90,7 @@
 ### 3. 装进 DSH
 
 ```bash
-dshm_install id=<github-owner>/dsh-media-eye
+dshm_install id=<github-owner>/dsh-media-caption
 ```
 
 或本地开发时手动软链到 profile 的 `node_modules/`（注意：**不要**在 profile 里跑 `pnpm install`，`@deepseek-ai/*` 由宿主自带，装不上）。
@@ -101,9 +101,9 @@ dshm_install id=<github-owner>/dsh-media-eye
 
 ## 两个工具
 
-### `media_eye_process` —— 标准面
+### `media_caption_process` —— 标准面
 
-参数 `note`（笔记目录名），在 `MEDIA_EYE_INPUT_ROOT` 下找。
+参数 `note`（笔记目录名），在 `MEDIA_CAPTION_INPUT_ROOT` 下找。
 
 ```
 <输入根>/<笔记目录>/video/xxx.mp4
@@ -112,7 +112,7 @@ dshm_install id=<github-owner>/dsh-media-eye
 
 **盘上已经有 `字幕.json` 就直接返回，不重算。**
 
-### `media_eye_file` —— 直给面
+### `media_caption_file` —— 直给面
 
 参数 `file`（任意文件的绝对路径），可选 `id`。
 

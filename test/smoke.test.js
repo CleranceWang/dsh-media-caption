@@ -7,8 +7,8 @@
 // 用法：
 //   node test/smoke.test.js <一个真实视频文件路径>
 //
-// 需要先配好 whisper 路径（~/.dsh/media-eye.config.json 的 whisper / modelDir，
-// 或环境变量 MEDIA_EYE_WHISPER / MEDIA_EYE_MODEL_DIR）。见 README。
+// 需要先配好 whisper 路径（~/.dsh/media-caption.config.json 的 whisper / modelDir，
+// 或环境变量 MEDIA_CAPTION_WHISPER / MEDIA_CAPTION_MODEL_DIR）。见 README。
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
