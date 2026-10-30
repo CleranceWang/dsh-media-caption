@@ -1,8 +1,12 @@
 {
   "name": "dsh-media-caption",
   "version": "0.1.0",
-  "description": "媒体之眼：给视频/音频生成字幕与关键帧，只出原料（json 字幕 + jpg 帧），不做 AI 总结。告诉 agent「去哪取东西」。",
+  "description": "给视频/音频生成字幕 JSON 与关键帧 JPG，只出原料，不做 AI 总结。",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleranceWang/dsh-media-caption.git"
+  },
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
