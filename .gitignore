@@ -39,3 +39,4 @@ tmp/
 # 里面写死了本机视频路径与 NAS 地址，属于临时实验脚本。
 dev/
 .smoke/
+dsh-media-eye/
