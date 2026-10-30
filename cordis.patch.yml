@@ -13,18 +13,17 @@
 #
 # 配置：~/.dsh/media-caption.config.json（或环境变量 MEDIA_CAPTION_*）
 #
-#   最小（只用两个工具，不扫盘）：
+#   最小（只用工具，不扫盘）：
 #     { "whisper": "...", "modelDir": "...", "outRoot": "D:/media/out" }
 #
-#   自动处理（丢进输入目录就自己跑）：
+#   自动处理（DSH 启动时扫一轮）：
 #     {
 #       "inputRoot": "D:/media/in",
 #       "outRoot":   "D:/media/out",
 #       "dbPath":    "D:/media/queue.db",
-#       "sentinel":  true,
-#       "watcher":   true
+#       "autoSweep": true
 #     }
-#   ★ sentinel / watcher 默认都是 false：装上先只有工具，不会自己去扫盘。
+#   ★ autoSweep 默认 false：装上先只有工具，不会自己去扫盘。
 # ============================================================================
 
 - insert:
